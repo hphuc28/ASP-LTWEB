@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "79K+wDg8Q6FJ9hLvcVO2zNFhPSjISwus5ojJMg7xQm0o1UE3fQ3n4A/kwpeLVkRsHgUEt9x2eAarHpyqBjR9Qw==",
+  "dgSpecHash": "ZRYnCX4BdgYcxR0LN9+85zm9Xrc12isnjOBiLVEZEIExXyzxDHN8SGvLgq6Tl/6BF+XyDdQ8gHwYS0b36qU60g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MTBH\\OneDrive\\Tài liệu\\LTWEB\\ASP-LTWEB\\Baitap02\\Baitap02\\Baitap02.csproj",
+  "projectFilePath": "D:\\LTWEB\\ASP-LTWEB\\Baitap02\\Baitap02\\Baitap02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MTBH\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\MTBH\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
