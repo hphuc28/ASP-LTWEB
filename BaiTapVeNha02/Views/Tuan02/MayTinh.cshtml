@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "MayTinh";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>Kết quả: @ViewBag.Result</p>
+<p>@ViewBag.Message</p>
+
+<form method="get" action="@Url.Action("MayTinh", "Calculator")">
+    <label for="a">Số thứ nhất:</label>
+    <input type="number" name="a" required />
+    <br />
+    <label for="b">Số thứ hai:</label>
+    <input type="number" name="b" required />
+    <br />
+    <label for="pheptinh">Phép tính:</label>
+    <select name="pheptinh" required>
+        <option value="cộng">Cộng</option>
+        <option value="trừ">Trừ</option>
+        <option value="nhân">Nhân</option>
+        <option value="chia">Chia</option>
+    </select>
+    <br />
+    <input type="submit" value="Tính toán" />
+</form>
+
