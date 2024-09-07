@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace BaiTapVeNha02.Controllers
 {
@@ -13,40 +14,41 @@ namespace BaiTapVeNha02.Controllers
         }
         public IActionResult MayTinh(int a, int b, string pheptinh)
         {
-            double result = 0;
-            string message = "";
+            double ketqua = 0;
 
-            try
+
             {
-                switch (pheptinh.ToLower())
+                switch (pheptinh)
                 {
                     case "cộng":
-                        result = a + b;
+                        ketqua = a + b;
                         break;
                     case "trừ":
-                        result = a - b;
+                        ketqua = a - b;
                         break;
                     case "nhân":
-                        result = a * b;
+                        ketqua = a * b;
                         break;
                     case "chia":
                         if (b != 0)
-                            result = (double)a / b;
+                            ketqua = (double)a / b;
                         else
-                            message = "Không thể chia cho 0.";
+                            ViewBag.Loi = "Không thể chia cho 0";
                         break;
                     default:
-                        message = "Phép tính không hợp lệ.";
+                        ViewBag.Loi = "Phép tính không hợp lệ";
                         break;
                 }
             }
-            catch (Exception ex)
+            if (ViewBag.Loi == null)
             {
-                message = $"Lỗi: {ex.Message}";
+                ViewBag.KetQua = ketqua;
             }
 
-            ViewBag.Result = result;
-            ViewBag.Message = message;
+            return View();
+        }
+        public ActionResult Profile()
+        {
             return View();
         }
     }
